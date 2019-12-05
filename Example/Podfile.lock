@@ -1,0 +1,16 @@
+PODS:
+  - SimpleSwiftNumericKeyboard (0.1.0)
+
+DEPENDENCIES:
+  - SimpleSwiftNumericKeyboard (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleSwiftNumericKeyboard:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleSwiftNumericKeyboard: fef8c53652d47576d47bb800fe5cf41e67de8a3f
+
+PODFILE CHECKSUM: dab39311ac7a3b2190266de80db83babc79c9acf
+
+COCOAPODS: 1.5.3
