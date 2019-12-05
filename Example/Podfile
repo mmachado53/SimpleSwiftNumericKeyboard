@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SimpleSwiftNumericKeyboard_Tests' do
+  pod 'SimpleSwiftNumericKeyboard', :path => '../'
+  
+  
+end
