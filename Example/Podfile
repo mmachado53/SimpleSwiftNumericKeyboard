@@ -1,11 +1,6 @@
 use_frameworks!
-
-target 'SimpleSwiftNumericKeyboard_Example' do
+target 'SimpleSwiftNumericKeyboard_Tests' do
   pod 'SimpleSwiftNumericKeyboard', :path => '../'
 
-  target 'SimpleSwiftNumericKeyboard_Tests' do
-    inherit! :search_paths
 
-    
-  end
 end
