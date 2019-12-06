@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import SimpleSwiftNumericKeyboard
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var tf:UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       // NumericKeyBoard.set(tf, type: .numberPad)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

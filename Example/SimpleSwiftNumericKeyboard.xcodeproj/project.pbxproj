@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		031E8B9D009F4B6ACD72DDE4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		498B781BBF95E6177B1FFC6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		031E8B9D009F4B6ACD72DDE4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		498B781BBF95E6177B1FFC6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		51AF28D7926BCBBAF6208B9D /* Pods-SimpleSwiftNumericKeyboard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSwiftNumericKeyboard_Tests.release.xcconfig"; path = "Target Support Files/Pods-SimpleSwiftNumericKeyboard_Tests/Pods-SimpleSwiftNumericKeyboard_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleSwiftNumericKeyboard_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSwiftNumericKeyboard_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6B5FD17B427C1D9EC509FE0E /* Pods-SimpleSwiftNumericKeyboard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSwiftNumericKeyboard_Example.debug.xcconfig"; path = "Target Support Files/Pods-SimpleSwiftNumericKeyboard_Example/Pods-SimpleSwiftNumericKeyboard_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6F4E64BF7AA307363ABCCAF6 /* SimpleSwiftNumericKeyboard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SimpleSwiftNumericKeyboard.podspec; path = ../SimpleSwiftNumericKeyboard.podspec; sourceTree = "<group>"; };
+		6F4E64BF7AA307363ABCCAF6 /* SimpleSwiftNumericKeyboard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleSwiftNumericKeyboard.podspec; path = ../SimpleSwiftNumericKeyboard.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8751B05937987590F341B2ED /* Pods_SimpleSwiftNumericKeyboard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSwiftNumericKeyboard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA49DB7EB4E4CA592920C62 /* Pods-SimpleSwiftNumericKeyboard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSwiftNumericKeyboard_Example.release.xcconfig"; path = "Target Support Files/Pods-SimpleSwiftNumericKeyboard_Example/Pods-SimpleSwiftNumericKeyboard_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DBDC040B98188010BBF25992 /* Pods_SimpleSwiftNumericKeyboard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSwiftNumericKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +147,6 @@
 				E26028B083B5824D62CAC2B6 /* Pods-SimpleSwiftNumericKeyboard_Tests.debug.xcconfig */,
 				51AF28D7926BCBBAF6208B9D /* Pods-SimpleSwiftNumericKeyboard_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,12 +479,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleSwiftNumericKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -494,12 +496,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleSwiftNumericKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

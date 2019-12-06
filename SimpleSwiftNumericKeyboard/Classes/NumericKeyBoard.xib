@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lmr-z3-usT" customClass="NumericKeyBoard" customModule="SimpleSwiftNumericKeyboard">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="419"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="n3A-9G-d5F">
+                    <rect key="frame" x="425" y="64" width="516" height="301"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-NT-tVK">
+                            <rect key="frame" x="0.0" y="0.0" width="171.5" height="301"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-4f-q1x" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="bC5-4f-q1x" secondAttribute="height" multiplier="23:10" id="d3d-D2-NRd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="N61-3y-0RZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE8-1G-Rdq" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="75.5" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="CE8-1G-Rdq" secondAttribute="height" multiplier="23:10" id="SE8-YQ-gcC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="4">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="baa-ix-Een"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-Oc-duR" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="151" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="eF7-Oc-duR" secondAttribute="height" multiplier="23:10" id="6JY-Oq-mxu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="7">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="cp6-FZ-Ye9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Kx-gqS" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="226.5" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="9VC-Kx-gqS" secondAttribute="height" multiplier="23:10" id="M17-PJ-ML7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title=".">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="decimalPointButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="oi2-Z6-7LJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="eF7-Oc-duR" firstAttribute="width" secondItem="eF7-Oc-duR" secondAttribute="height" multiplier="23:10" id="JdF-ER-IOo"/>
+                                <constraint firstItem="9VC-Kx-gqS" firstAttribute="width" secondItem="9VC-Kx-gqS" secondAttribute="height" multiplier="23:10" id="LJE-O2-MoC"/>
+                                <constraint firstItem="CE8-1G-Rdq" firstAttribute="width" secondItem="CE8-1G-Rdq" secondAttribute="height" multiplier="23:10" id="SvK-wB-QaQ"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-2j-mkN">
+                            <rect key="frame" x="172.5" y="0.0" width="171" height="301"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFn-sX-Jeh" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="171" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="qFn-sX-Jeh" secondAttribute="height" multiplier="23:10" id="yNt-GP-VAQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="2">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="X21-Lu-GkF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-h2-DfD" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="75.5" width="171" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Rbr-h2-DfD" secondAttribute="height" multiplier="23:10" id="Db1-p6-I2U"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="5">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="tGi-hV-jfA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qy-Qj-Qbw" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="151" width="171" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="4qy-Qj-Qbw" secondAttribute="height" multiplier="23:10" id="tCH-iZ-2AE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="8">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="reB-XT-Nyr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-Xt-w8Y" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="226.5" width="171" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="qVQ-Xt-w8Y" secondAttribute="height" multiplier="23:10" id="Uff-4J-ZVM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="0">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="SfI-Rc-ynW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="4qy-Qj-Qbw" firstAttribute="width" secondItem="4qy-Qj-Qbw" secondAttribute="height" multiplier="23:10" id="L5e-D0-Lrj"/>
+                                <constraint firstItem="Rbr-h2-DfD" firstAttribute="width" secondItem="Rbr-h2-DfD" secondAttribute="height" multiplier="23:10" id="i0v-Re-DMX"/>
+                                <constraint firstItem="qVQ-Xt-w8Y" firstAttribute="width" secondItem="qVQ-Xt-w8Y" secondAttribute="height" multiplier="23:10" id="tLJ-Qf-bkF"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="73a-to-NVg">
+                            <rect key="frame" x="344.5" y="0.0" width="171.5" height="301"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-kS-Xrx" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="CIw-kS-Xrx" secondAttribute="height" multiplier="23:10" id="o0D-OS-4X0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="3">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="Q1F-P9-2CT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-fI-kch" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="75.5" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="lDg-fI-kch" secondAttribute="height" multiplier="23:10" id="vI2-Bs-AeC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="6">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="yAp-l6-mwD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJF-IY-wWJ" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="151" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="rJF-IY-wWJ" secondAttribute="height" multiplier="23:10" id="HEJ-9S-mHZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="9">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="LFz-IN-ULm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-fT-7Ka" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="226.5" width="171.5" height="74.5"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="sYr-fT-7Ka" secondAttribute="height" multiplier="23:10" id="jpA-7j-lh9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <state key="normal" title="-">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="negativeButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="2v9-pP-Vwn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="lDg-fI-kch" firstAttribute="width" secondItem="lDg-fI-kch" secondAttribute="height" multiplier="23:10" id="H0I-BU-Myb"/>
+                                <constraint firstItem="rJF-IY-wWJ" firstAttribute="width" secondItem="rJF-IY-wWJ" secondAttribute="height" multiplier="23:10" id="O3Y-co-4pU"/>
+                                <constraint firstItem="sYr-fT-7Ka" firstAttribute="width" secondItem="sYr-fT-7Ka" secondAttribute="height" multiplier="23:10" id="iKN-ld-6qX"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NG-5n-NXD" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                    <rect key="frame" x="1196" y="64" width="150" height="74.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="4fG-wh-8X6"/>
+                    </constraints>
+                    <state key="normal" image="keyboard_delete_icon"/>
+                    <connections>
+                        <action selector="deleteButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="nIy-Eu-9DU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoL-9w-ap4" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                    <rect key="frame" x="1206" y="290.5" width="150" height="74.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="n1v-Ti-362"/>
+                    </constraints>
+                    <state key="normal" title="hide">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="hideKeyBoardButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="cr3-v7-Kyr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.81960784310000001" green="0.83529411760000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7NG-5n-NXD" firstAttribute="height" secondItem="CIw-kS-Xrx" secondAttribute="height" id="IaA-P7-Sy4"/>
+                <constraint firstItem="2Eb-B6-gUK" firstAttribute="trailing" secondItem="BoL-9w-ap4" secondAttribute="trailing" constant="10" id="N0F-xb-MdY"/>
+                <constraint firstItem="7NG-5n-NXD" firstAttribute="top" secondItem="n3A-9G-d5F" secondAttribute="top" id="UfG-cw-Pig"/>
+                <constraint firstItem="BoL-9w-ap4" firstAttribute="bottom" secondItem="n3A-9G-d5F" secondAttribute="bottom" id="VWD-XO-lJx"/>
+                <constraint firstItem="n3A-9G-d5F" firstAttribute="centerX" secondItem="2Eb-B6-gUK" secondAttribute="centerX" id="aG4-cb-qNa"/>
+                <constraint firstItem="n3A-9G-d5F" firstAttribute="top" secondItem="2Eb-B6-gUK" secondAttribute="top" constant="20" id="cvO-9x-jYr"/>
+                <constraint firstItem="BoL-9w-ap4" firstAttribute="height" secondItem="7NG-5n-NXD" secondAttribute="height" id="eoV-CT-urw"/>
+                <constraint firstItem="2Eb-B6-gUK" firstAttribute="bottom" secondItem="n3A-9G-d5F" secondAttribute="bottom" constant="20" id="rqK-X4-jCQ"/>
+                <constraint firstItem="2Eb-B6-gUK" firstAttribute="trailing" secondItem="7NG-5n-NXD" secondAttribute="trailing" constant="20" id="sY4-rS-7Uw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="2Eb-B6-gUK"/>
+            <connections>
+                <outlet property="decimalPointBtn" destination="9VC-Kx-gqS" id="MP1-tM-Cvd"/>
+                <outlet property="minusButton" destination="sYr-fT-7Ka" id="uKX-Xy-oNP"/>
+                <outletCollection property="btns" destination="CIw-kS-Xrx" collectionClass="NSMutableArray" id="hIV-4m-xcQ"/>
+                <outletCollection property="btns" destination="lDg-fI-kch" collectionClass="NSMutableArray" id="UAK-ev-Wdd"/>
+                <outletCollection property="btns" destination="rJF-IY-wWJ" collectionClass="NSMutableArray" id="O8g-b2-pat"/>
+                <outletCollection property="btns" destination="4qy-Qj-Qbw" collectionClass="NSMutableArray" id="uD4-ai-D8a"/>
+                <outletCollection property="btns" destination="Rbr-h2-DfD" collectionClass="NSMutableArray" id="27w-Y8-5dP"/>
+                <outletCollection property="btns" destination="qFn-sX-Jeh" collectionClass="NSMutableArray" id="Ct8-4Q-9iV"/>
+                <outletCollection property="btns" destination="bC5-4f-q1x" collectionClass="NSMutableArray" id="akf-Ez-AWh"/>
+                <outletCollection property="btns" destination="CE8-1G-Rdq" collectionClass="NSMutableArray" id="PBu-WL-vve"/>
+                <outletCollection property="btns" destination="eF7-Oc-duR" collectionClass="NSMutableArray" id="cDJ-Cw-9Zu"/>
+                <outletCollection property="btns" destination="qVQ-Xt-w8Y" collectionClass="NSMutableArray" id="hZH-mm-cLh"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="keyboard_delete_icon" width="39" height="29"/>
+    </resources>
+</document>
