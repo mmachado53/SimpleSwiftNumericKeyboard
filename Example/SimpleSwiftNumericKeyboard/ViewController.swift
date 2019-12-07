@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // NumericKeyBoard.set(tf, type: .numberPad)
+        NumericKeyBoard.set(tf, type: .numberPad,customPalette: [.backgroundColor:UIColor.blue])
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -15,24 +15,47 @@ public enum KeyBoardType {
     case numberNegativePad      /// disbale "." key enable "-" key
 }
 
+public enum NumericKeyBoardColorPaletteProp {
+    case stateNormalNumberButton
+    case statePressNumerButton
+    case textColorNumberButton
+    case stateNormalSecondaryButton
+    case statePressSecondaryButton
+    case textColorSecondaryButton
+    case backgroundColor
+}
+
 public class NumericKeyBoard : UIView, UIInputViewAudioFeedback {
-    
-    
     
     
     // MARK: Private Static vars
     private static let numbers:[String] = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    
+    // MARK: Global Color Palette
+    public static var GLOBAL_COLOR_PALETTE:[NumericKeyBoardColorPaletteProp:UIColor] = [
+        .stateNormalNumberButton: UIColor.white,
+        .statePressNumerButton : UIColor.lightGray,
+        .textColorNumberButton : UIColor.darkText,
+        .stateNormalSecondaryButton : UIColor.lightGray,
+        .statePressSecondaryButton :  UIColor.gray,
+        .textColorSecondaryButton : UIColor.darkText,
+        .backgroundColor : UIColor(red: 0.81, green: 0.83, blue: 0.85, alpha: 1.0)
+    ]
     
     // MATK: Public vars
     public var type:KeyBoardType = .decimalPad
     
     // MARK: fileprivate vars
     fileprivate weak var textView: UITextInput?
+    fileprivate var colorPalette:[NumericKeyBoardColorPaletteProp:UIColor] = [:]
     
     // MARK: Outlets
-    @IBOutlet var decimalPointBtn:UIButton?
-    @IBOutlet var btns:[UIButton]?
-    @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet var decimalPointBtn:SimpleCustomBtn?
+    @IBOutlet var btns:[SimpleCustomBtn]?
+    @IBOutlet weak var minusButton: SimpleCustomBtn!
+    @IBOutlet weak var ereaseButton: SimpleCustomBtn!
+    @IBOutlet weak var dismissButton: SimpleCustomBtn!
+    
     
     // MARK: Static methods
     
@@ -42,14 +65,14 @@ public class NumericKeyBoard : UIView, UIInputViewAudioFeedback {
      - Parameters:
      - textView: the UITextInput to configure
      - type: type of configuration for NumericKeyBoard
+     - customPalette: OPTIONAL its a custom Colors palette for the new NumericKeyBoard instance (override the global palette)
      - Returns: A NumericKeyBoard instanse.
      */
-    @discardableResult public static func set(_ textView: UITextInput, type: KeyBoardType) -> NumericKeyBoard?{
+    @discardableResult public static func set(_ textView: UITextInput, type: KeyBoardType, customPalette:[NumericKeyBoardColorPaletteProp:UIColor]?=nil) -> NumericKeyBoard?{
         let podBundle = Bundle(for: NumericKeyBoard.self)
         let nib:UINib = UINib(nibName: "NumericKeyBoard", bundle: podBundle)
         let instance = nib.instantiate(withOwner: self, options: nil).first as! NumericKeyBoard
-        instance.type = type
-        instance.setup(textView, type: type)
+        instance.setup(textView, type: type,customPalette:customPalette )
         return instance
         
     }
@@ -63,26 +86,55 @@ public class NumericKeyBoard : UIView, UIInputViewAudioFeedback {
      - Parameters:
      - textView: the UITextInput to configure
      - type: type of configuration for NumericKeyBoard
+     - customPalette: OPTIONAL its a custom Colors palette for the new NumericKeyBoard instance (override the global palette)
      */
-    private func setup(_ textView: UITextInput, type: KeyBoardType){
+    private func setup(_ textView: UITextInput, type: KeyBoardType,customPalette:[NumericKeyBoardColorPaletteProp:UIColor]?=nil){
         self.textView = textView
-        minusButton.isEnabled = type == .decimalNegativePad || type == .numberNegativePad
+        self.type = type
+        
+        
+        
+        
         if let textView = self.textView as? UITextField {
             textView.inputView = self
         }
         if let textView = self.textView as? UITextView {
             textView.inputView = self
         }
-        
         if #available(iOS 9.0, *) {
             removeToolbar()
         }
-        if let btns:[UIButton] = self.btns {
+        
+        //Merge color palettes
+        var currentPalette:[NumericKeyBoardColorPaletteProp:UIColor]
+        if customPalette != nil {
+            currentPalette = [:]
+            for (key,value) in NumericKeyBoard.GLOBAL_COLOR_PALETTE{
+                print("key \(key)")
+                currentPalette[key] = customPalette!.index(forKey: key) == nil ? value : customPalette![key]
+            }
+        }else{
+            currentPalette = NumericKeyBoard.GLOBAL_COLOR_PALETTE
+        }
+        
+        if let btns:[SimpleCustomBtn] = self.btns {
             btns.forEach { (button) in
+                button.configureColors(normalBg: currentPalette[.stateNormalNumberButton]!, pressedBg: currentPalette[.statePressNumerButton]!, textColor: currentPalette[.textColorNumberButton]!)
             }
         }
         self.decimalPointBtn?.isEnabled = type == .decimalNegativePad || type == .decimalPad
+        
+        self.decimalPointBtn?.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
+        
         self.decimalPointBtn?.setTitle((Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String, for: UIControl.State.normal)
+        
+        minusButton.isEnabled = type == .decimalNegativePad || type == .numberNegativePad
+        self.minusButton.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
+        
+        self.ereaseButton.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
+        self.dismissButton.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
+        self.backgroundColor = currentPalette[.backgroundColor]
+        
     }
     
     /// Notifications for textview
@@ -191,6 +243,34 @@ class KeyBoardButtonStyleB : UIButton{
         }
     }
 }
+class SimpleCustomBtn:UIButton{
+    public var normalBg:UIColor = UIColor.white
+    public var pressedBg:UIColor = UIColor.lightGray
+    override var isEnabled: Bool{
+        didSet{
+            self.alpha = isEnabled ? 1.0 : 0.2
+        }
+    }
+    override var isHighlighted: Bool{
+        didSet{
+            if isHighlighted{
+                self.backgroundColor = self.pressedBg
+            }else{
+                self.backgroundColor = self.normalBg
+            }
+        }
+    }
+    public func configureColors(normalBg:UIColor,pressedBg:UIColor,textColor:UIColor){
+        self.pressedBg = pressedBg
+        self.normalBg = normalBg
+        self.setTitleColor(textColor, for: .normal)
+        self.setTitleColor(textColor, for: .disabled)
+        self.setTitleColor(textColor, for: .highlighted)
+        self.backgroundColor = self.isHighlighted ? self.pressedBg : self.normalBg
+    }
+}
+
+
 
 /// extencion for storyboard implementation
 extension UITextField{
