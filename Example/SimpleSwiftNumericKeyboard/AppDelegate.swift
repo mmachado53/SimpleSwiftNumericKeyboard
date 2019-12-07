@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SimpleSwiftNumericKeyboard
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.backgroundColor] = UIColor.black
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.stateNormalNumberButton] = UIColor.black
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.statePressNumerButton] = UIColor.white.withAlphaComponent(0.3)
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.textColorNumberButton] = UIColor.white
+        
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.stateNormalSecondaryButton] = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.statePressSecondaryButton] = UIColor.white.withAlphaComponent(0.3)
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.textColorSecondaryButton] = UIColor.white
+        
         return true
     }
 

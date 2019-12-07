@@ -22,7 +22,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-NT-tVK">
                             <rect key="frame" x="0.0" y="0.0" width="171.5" height="301"/>
                             <subviews>
-                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-4f-q1x" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-4f-q1x" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -36,7 +36,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="N61-3y-0RZ"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE8-1G-Rdq" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE8-1G-Rdq" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="75.5" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -50,7 +50,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="baa-ix-Een"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-Oc-duR" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-Oc-duR" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="151" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -64,7 +64,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="cp6-FZ-Ye9"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Kx-gqS" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Kx-gqS" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="226.5" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -88,7 +88,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-2j-mkN">
                             <rect key="frame" x="172.5" y="0.0" width="171" height="301"/>
                             <subviews>
-                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFn-sX-Jeh" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFn-sX-Jeh" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="171" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -102,7 +102,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="X21-Lu-GkF"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-h2-DfD" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-h2-DfD" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="75.5" width="171" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -116,7 +116,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="tGi-hV-jfA"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qy-Qj-Qbw" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qy-Qj-Qbw" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="151" width="171" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -130,7 +130,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="reB-XT-Nyr"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-Xt-w8Y" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-Xt-w8Y" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="226.5" width="171" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -154,7 +154,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="73a-to-NVg">
                             <rect key="frame" x="344.5" y="0.0" width="171.5" height="301"/>
                             <subviews>
-                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-kS-Xrx" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-kS-Xrx" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -168,7 +168,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="Q1F-P9-2CT"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-fI-kch" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-fI-kch" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="75.5" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -182,7 +182,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="yAp-l6-mwD"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJF-IY-wWJ" customClass="KeyBoardButtonStyleA" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJF-IY-wWJ" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="151" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -196,7 +196,7 @@
                                         <action selector="numbersButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="LFz-IN-ULm"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-fT-7Ka" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-fT-7Ka" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="226.5" width="171.5" height="74.5"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -219,7 +219,7 @@
                         </stackView>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NG-5n-NXD" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NG-5n-NXD" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="1196" y="64" width="150" height="74.5"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -230,13 +230,13 @@
                         <action selector="deleteButtonPressed:" destination="Lmr-z3-usT" eventType="touchUpInside" id="nIy-Eu-9DU"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoL-9w-ap4" customClass="KeyBoardButtonStyleB" customModule="DrawingApp" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoL-9w-ap4" customClass="SimpleCustomBtn" customModule="SimpleSwiftNumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="1206" y="290.5" width="150" height="74.5"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="n1v-Ti-362"/>
                     </constraints>
-                    <state key="normal" title="hide">
+                    <state key="normal" image="keyboard_hide_icon">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
@@ -260,6 +260,8 @@
             <viewLayoutGuide key="safeArea" id="2Eb-B6-gUK"/>
             <connections>
                 <outlet property="decimalPointBtn" destination="9VC-Kx-gqS" id="MP1-tM-Cvd"/>
+                <outlet property="dismissButton" destination="BoL-9w-ap4" id="yTN-ac-oud"/>
+                <outlet property="ereaseButton" destination="7NG-5n-NXD" id="UNA-1n-dm3"/>
                 <outlet property="minusButton" destination="sYr-fT-7Ka" id="uKX-Xy-oNP"/>
                 <outletCollection property="btns" destination="CIw-kS-Xrx" collectionClass="NSMutableArray" id="hIV-4m-xcQ"/>
                 <outletCollection property="btns" destination="lDg-fI-kch" collectionClass="NSMutableArray" id="UAK-ev-Wdd"/>
@@ -276,5 +278,6 @@
     </objects>
     <resources>
         <image name="keyboard_delete_icon" width="39" height="29"/>
+        <image name="keyboard_hide_icon" width="39" height="29"/>
     </resources>
 </document>
