@@ -143,8 +143,21 @@ public class NumericKeyBoard : UIView, UIInputViewAudioFeedback {
         self.minusButton.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
         
         self.ereaseButton.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
+        
+        NumericKeyBoard.tintButtonImage(button: self.ereaseButton, tint: currentPalette[.textColorSecondaryButton]!)
+        
         self.dismissButton.configureColors(normalBg: currentPalette[.stateNormalSecondaryButton]!, pressedBg: currentPalette[.statePressSecondaryButton]!, textColor: currentPalette[.textColorSecondaryButton]!)
+        
+        NumericKeyBoard.tintButtonImage(button: self.dismissButton, tint: currentPalette[.textColorSecondaryButton]!)
+    
         self.backgroundColor = currentPalette[.backgroundColor]
+    }
+    
+    private static func tintButtonImage(button:UIButton,tint:UIColor){
+        if let image:UIImage = button.imageView?.image?.withRenderingMode(.alwaysTemplate){
+            button.setImage(image, for: .normal)
+            button.imageView?.tintColor = tint
+        }
     }
     
     /// Remove Undo/Redo toolbar

@@ -236,7 +236,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="n1v-Ti-362"/>
                     </constraints>
-                    <state key="normal" title="hide">
+                    <state key="normal" image="keyboard_hide_icon">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
@@ -278,5 +278,6 @@
     </objects>
     <resources>
         <image name="keyboard_delete_icon" width="39" height="29"/>
+        <image name="keyboard_hide_icon" width="39" height="29"/>
     </resources>
 </document>
