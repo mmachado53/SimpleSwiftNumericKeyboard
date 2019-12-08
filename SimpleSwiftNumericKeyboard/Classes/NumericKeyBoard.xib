@@ -223,7 +223,8 @@
                     <rect key="frame" x="1196" y="64" width="150" height="74.5"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="4fG-wh-8X6"/>
+                        <constraint firstAttribute="width" priority="750" constant="150" id="4fG-wh-8X6"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="GcC-BW-DjN"/>
                     </constraints>
                     <state key="normal" image="keyboard_delete_icon"/>
                     <connections>
@@ -234,7 +235,8 @@
                     <rect key="frame" x="1206" y="290.5" width="150" height="74.5"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="n1v-Ti-362"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ULa-V6-a3j"/>
+                        <constraint firstAttribute="width" priority="750" constant="150" id="n1v-Ti-362"/>
                     </constraints>
                     <state key="normal" image="keyboard_hide_icon">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -248,8 +250,10 @@
             <constraints>
                 <constraint firstItem="7NG-5n-NXD" firstAttribute="height" secondItem="CIw-kS-Xrx" secondAttribute="height" id="IaA-P7-Sy4"/>
                 <constraint firstItem="2Eb-B6-gUK" firstAttribute="trailing" secondItem="BoL-9w-ap4" secondAttribute="trailing" constant="10" id="N0F-xb-MdY"/>
+                <constraint firstItem="7NG-5n-NXD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n3A-9G-d5F" secondAttribute="trailing" constant="20" id="On6-uH-pDP"/>
                 <constraint firstItem="7NG-5n-NXD" firstAttribute="top" secondItem="n3A-9G-d5F" secondAttribute="top" id="UfG-cw-Pig"/>
                 <constraint firstItem="BoL-9w-ap4" firstAttribute="bottom" secondItem="n3A-9G-d5F" secondAttribute="bottom" id="VWD-XO-lJx"/>
+                <constraint firstItem="BoL-9w-ap4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n3A-9G-d5F" secondAttribute="trailing" constant="20" id="ZuK-4F-6gq"/>
                 <constraint firstItem="n3A-9G-d5F" firstAttribute="centerX" secondItem="2Eb-B6-gUK" secondAttribute="centerX" id="aG4-cb-qNa"/>
                 <constraint firstItem="n3A-9G-d5F" firstAttribute="top" secondItem="2Eb-B6-gUK" secondAttribute="top" constant="20" id="cvO-9x-jYr"/>
                 <constraint firstItem="BoL-9w-ap4" firstAttribute="height" secondItem="7NG-5n-NXD" secondAttribute="height" id="eoV-CT-urw"/>
