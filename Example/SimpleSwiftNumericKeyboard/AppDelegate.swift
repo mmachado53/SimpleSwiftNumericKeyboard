@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SimpleSwiftNumericKeyboard
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /*
+         Configure global style for SimpleSwiftNumericKeyboard
+         NumericKeyBoard.GLOBAL_COLOR_PALETTE is a [NumericKeyBoardColorPaletteProp : UIColor]
+         */
+        
+        // Color of background
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.backgroundColor] = UIColor.black
+        
+        // Color of numbers buttons
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.stateNormalNumberButton] = UIColor.black
+        
+        // Color of number buttons when is pressed
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.statePressNumerButton] = UIColor.white.withAlphaComponent(0.3)
+        
+        // Color of text in numbers buttons
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.textColorNumberButton] = UIColor.white
+        
+        // Color of secondary buttons
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.stateNormalSecondaryButton] = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
+        
+        // Color of secondary buttons when is pressed
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.statePressSecondaryButton] = UIColor.white.withAlphaComponent(0.3)
+        
+        // Color of text in secondary buttons
+        NumericKeyBoard.GLOBAL_COLOR_PALETTE[.textColorSecondaryButton] = UIColor.white
+        
         return true
     }
 

@@ -15,7 +15,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // NumericKeyBoard.set(tf, type: .numberPad)
+        
+        var redStyle:[NumericKeyBoardColorPaletteProp:UIColor] = [:]
+        redStyle[.backgroundColor] = UIColor(red: 0.85, green: 0, blue: 0.21, alpha: 1.0)
+        redStyle[.stateNormalNumberButton] = UIColor(red: 1.0, green: 0, blue: 0.21, alpha: 1.0)
+        redStyle[.statePressNumerButton] = UIColor.white.withAlphaComponent(0.3)
+        redStyle[.textColorNumberButton] = UIColor.white
+        redStyle[.stateNormalSecondaryButton] = UIColor(red: 0.75, green: 28 / 255, blue: 70 / 255, alpha: 1.0)
+        redStyle[.statePressSecondaryButton] = UIColor.white.withAlphaComponent(0.3)
+        redStyle[.textColorSecondaryButton] = UIColor.white
+        NumericKeyBoard.set(tf, type: .numberNegativePad,customPalette: redStyle)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
