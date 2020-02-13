@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimpleSwiftNumericKeyboard'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'SimpleSwiftNumericKeyboard is a numeric keyboard for ipad.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,8 @@ Pod::Spec.new do |s|
   #s.resource_bundles = {
   #  'SimpleSwiftNumericKeyboard' => ['SimpleSwiftNumericKeyboard/Classes/*.xib','SimpleSwiftNumericKeyboard/Assets/*.png']
   #}
+  
+  s.resources = ['SimpleSwiftNumericKeyboard/Assets/Images.xcassets']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
